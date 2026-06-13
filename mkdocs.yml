@@ -1,0 +1,44 @@
+site_name: Documentación QGIS
+
+theme:
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: teal
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: lime
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - content.code.annotate
+    - content.tabs.link
+
+nav:
+  - Inicio: index.md
+  - Instalación y Configuración: instalacion.md
+  - Capas y Datos Espaciales: capas.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - toc:
+      permalink: "#"
+  - attr_list
